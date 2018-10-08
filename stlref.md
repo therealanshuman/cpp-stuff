@@ -141,26 +141,43 @@ for (auto it=m.begin(); it!=m.end(); ++it) { cout << (*it).first << " " << (*it)
 for (auto x : s) { cout << x.first << " " << x.second << endl; }
 ```
 
+# Stack
+#### Initialization
+```
+stack<int> s; // empty stack
+```
+#### Access
+```
+s.top() // return reference to the top element
+```
+#### Capacity
+```
+s.size() // return the number of elements
+s.empty() // return true if empty false otherwise
+```
+#### Modifiers
+```
+s.push(x) // insert element x at the top
+s.pop() // remove the top element
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Queue
+#### Initialization
+```
+queue<int> q; // empty queue
+```
+#### Access
+```
+q.front() // return reference to the first element
+q.back() // return reference to the last element
+```
+#### Capacity
+```
+q.size() // return the number of elements
+q.empty() // return true if empty false otherwise
+```
+#### Modifiers
+```
+q.push(x) // insert element x at the back
+q.pop() // remove the first element
+```
